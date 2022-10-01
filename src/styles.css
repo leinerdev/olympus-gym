@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-color: #276fc2;
+  --secundary-color: #e8d21d;
+  --border-radius: 1px;
+}
+
+body {
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  min-height: 100vh;
+  background: rgb(186, 162, 56);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(186, 162, 56, 1) 0%,
+    rgba(59, 59, 59, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(186, 162, 56, 1) 0%,
+    rgba(59, 59, 59, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(186, 162, 56, 1) 0%,
+    rgba(59, 59, 59, 1) 100%
+  );
+}
