@@ -1,0 +1,81 @@
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 250px;
+  height: 264px;
+  background: transparent;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.card h2 {
+  z-index: 1;
+  color: white;
+  font-size: 2em;
+}
+
+.card::before {
+  z-index: 0;
+  content: '';
+  position: absolute;
+  width: 100px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e0c443), to(rgb(24, 24, 24)));
+  background-image: linear-gradient(180deg, #e0c443, rgb(22, 22, 22));
+  height: 130%;
+  -webkit-animation: rotBGimg 3s linear infinite;
+          animation: rotBGimg 3s linear infinite;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+img, h4 {
+  z-index: 1;
+}
+
+@-webkit-keyframes rotBGimg {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotBGimg {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  background-color: #e0c443;
+  background-repeat: no-repeat;
+  background-size: contain;
+  inset: 5px;
+  border-radius: 15px;
+}
+/* .card:hover:before {
+  background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+  animation: rotBGimg 3.5s linear infinite;
+} */
+

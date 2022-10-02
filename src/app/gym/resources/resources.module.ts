@@ -4,11 +4,15 @@ import { CommonModule } from '@angular/common';
 import { SvgAuthComponent } from './svg-auth/svg-auth.component';
 import { InputComponent } from './input/input.component'
 import { ReactiveFormsModule } from '@angular/forms';
+import { SpecialCardComponent } from './special-card/special-card.component';
+import { BCardComponent } from './b-card/b-card.component';
 
 @NgModule({
   declarations: [
     SvgAuthComponent,
-    InputComponent
+    InputComponent,
+    SpecialCardComponent,
+    BCardComponent
   ],
   imports: [
     CommonModule,
@@ -16,7 +20,9 @@ import { ReactiveFormsModule } from '@angular/forms';
   ],
   exports: [
     SvgAuthComponent,
-    InputComponent
+    InputComponent,
+    SpecialCardComponent,
+    BCardComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

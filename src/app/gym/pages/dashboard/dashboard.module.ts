@@ -7,6 +7,10 @@ import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { MembershipsComponent } from './memberships/memberships.component';
 import { HeadingRowComponent } from '../../components/heading-row/heading-row.component';
 import { FooterComponent } from '../../components/footer/footer.component';
+import { AccountComponent } from './account/account.component';
+import { ResourcesModule } from '../../resources/resources.module';
+import { ClasesInfoComponent } from '../../components/clases-info/clases-info.component';
+import { ContentRowComponent } from '../../components/content-row/content-row.component';
 
 
 @NgModule({
@@ -15,11 +19,15 @@ import { FooterComponent } from '../../components/footer/footer.component';
     NavbarComponent,
     MembershipsComponent,
     HeadingRowComponent,
-    FooterComponent
+    FooterComponent,
+    AccountComponent,
+    ClasesInfoComponent,
+    ContentRowComponent,
   ],
   imports: [
     CommonModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
+    ResourcesModule
   ]
 })
 export class DashboardModule { }
