@@ -1,0 +1,33 @@
+.input_container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+label {
+  color: #3b3312;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+i {
+  position: absolute;
+  margin-top: 34px;
+  margin-left: 10px;
+}
+
+input {
+  border-radius: 0.5rem;
+  width: 300px;
+  border: none;
+  padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  transition: 350ms;
+}
+
+input:hover,
+input:focus {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

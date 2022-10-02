@@ -1,1 +1,87 @@
-<p>register works!</p>
+<main class="row p-5 mt-4">
+  <section
+    class="col d-flex justify-content-center flex-column align-items-center"
+  >
+    <h1>OLYMPUS GYM</h1>
+    <br />
+    <app-svg-auth></app-svg-auth>
+  </section>
+  <section class="col d-flex justify-content-center">
+    <form
+      [formGroup]="registerForm"
+      (ngSubmit)="register()"
+      autocomplete="off"
+      id="login"
+      class="login_container"
+    >
+      <h2 class="text-center fs-2 mt-4 mb-4">Create new account</h2>
+      <div class="inputs_container">
+        <app-input
+          [icon]="'bi-person-lines-fill'"
+          [inputType]="'text'"
+          [placeHolder]="'Type your full name'"
+          [label]="'Nombres'"
+          [control]="registerForm.controls['name']"
+        ></app-input>
+
+        <app-input
+          [icon]="'bi-person-lines-fill'"
+          [inputType]="'text'"
+          [placeHolder]="'Type your last name'"
+          [label]="'Apellidos'"
+          [control]="registerForm.controls['last_name']"
+        ></app-input>
+
+        <app-input
+          [icon]="'bi-telephone'"
+          [inputType]="'number'"
+          [placeHolder]="'Type your phone number'"
+          [label]="'Número de teléfono'"
+          [control]="registerForm.controls['phone_number']"
+        ></app-input>
+
+        <app-input
+          [icon]="'bi-envelope'"
+          [inputType]="'email'"
+          [placeHolder]="'Type your email'"
+          [label]="'Correo electrónico'"
+          [control]="registerForm.controls['email']"
+        ></app-input>
+
+        <app-input
+          [icon]="'bi-person-lines-fill'"
+          [inputType]="'number'"
+          [placeHolder]="'Type your id number'"
+          [label]="'Número de documento'"
+          [control]="registerForm.controls['id_number']"
+        ></app-input>
+
+        <app-input
+          [icon]="'bi-key'"
+          [inputType]="'password'"
+          [placeHolder]="'Type your password'"
+          [label]="'Contraseña'"
+          [control]="registerForm.controls['password']"
+        ></app-input>
+
+        <app-input
+          [icon]="'bi-key'"
+          [inputType]="'password'"
+          [placeHolder]="'Confirm your password'"
+          [label]="'Confirmar contraseña'"
+          [control]="registerForm.controls['re_password']"
+        ></app-input>
+
+        <button id="loginButton" type="submit">REGISTER</button>
+      </div>
+      <span id="sign_up" class="sign_up"
+        >Do you already have an account?
+        <a routerLink="/auth/login">Login</a></span
+      >
+    </form>
+
+    <div id="register" class="register_container">
+      <h2 class="text-center">Register</h2>
+    </div>
+  </section>
+</main>

@@ -1,0 +1,120 @@
+@media screen and (max-width: 1024px) {
+  svg {
+    display: none;
+  }
+}
+
+section {
+  height: auto;
+  width: 100%;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.login_container {
+  background-color: #e0c443;
+  border-radius: 1rem;
+  height: auto;
+  padding-bottom: 2rem;
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  display: grid;
+}
+
+h2 {
+  font-size: 46px;
+}
+
+.inputs_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1.5rem;
+  padding: 0 3rem;
+}
+
+.input_container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+label {
+  color: #3b3312;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+box-icon {
+  position: absolute;
+  margin-top: 34px;
+  margin-left: 10px;
+}
+
+input {
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  transition: 350ms;
+}
+
+input:hover,
+input:focus {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+a {
+  color: #4e4e4e;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+button {
+  padding: 0.5rem 0rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: #3b3312;
+  width: 100%;
+  margin-top: 1rem;
+  color: white;
+  font-weight: 400;
+  opacity: 0.7;
+  font-size: 22px;
+  transition: 300ms;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+button:hover {
+  transform: translateY(-4px);
+}
+
+button:active {
+  transform: translateY(0.5px);
+}
+
+.sign_up {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.register_container {
+  display: none;
+  background-color: #e0c443;
+  border-radius: 1rem;
+  height: 550px;
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
