@@ -11,6 +11,7 @@ import { AccountComponent } from './account/account.component';
 import { ResourcesModule } from '../../resources/resources.module';
 import { ClasesInfoComponent } from '../../components/clases-info/clases-info.component';
 import { ContentRowComponent } from '../../components/content-row/content-row.component';
+import { ProductViewComponent } from '../../components/product-view/product-view.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { ContentRowComponent } from '../../components/content-row/content-row.co
     AccountComponent,
     ClasesInfoComponent,
     ContentRowComponent,
+    ProductViewComponent
   ],
   imports: [
     CommonModule,
